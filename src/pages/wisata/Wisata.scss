@@ -1,0 +1,142 @@
+// Color Palette
+$primary-dark: #5A756E;
+$primary-light: #8DBEC9;
+$accent-blue: #3DBCD5;
+$secondary-dark: #455E63;
+$secondary-light: #ABDBCE;
+$text-dark: #20626F;
+$white: #FFFFFF;
+$off-white: #F5F5F5;
+
+.wisata-page {
+  background-color: $off-white;
+  color: $text-dark;
+  font-family: 'Poppins', sans-serif;
+}
+
+// Hero Section
+.wisata-hero {
+  background-color: $primary-dark;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+  padding: 3rem 2rem;
+
+  .wisata-hero-content {
+    max-width: 800px;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      font-size: 1.3rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+// Reusable Section Style
+.museum-section,
+.wisata-section {
+  padding: 5rem 2rem;
+
+  .museum-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+
+    .museum-text {
+      h2 {
+        font-size: 2.2rem;
+        color: $primary-dark;
+        margin-bottom: 1.5rem;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 80px;
+          height: 3px;
+          background: $accent-blue;
+          margin-top: 0.5rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+          margin-bottom: 0.8rem;
+          font-size: 1rem;
+
+          &:before {
+            content: "✔";
+            color: $accent-blue;
+            margin-right: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .museum-image {
+      img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .museum-section,
+  .wisata-section {
+    .museum-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      .museum-text {
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        p,
+        ul li {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+
+  .wisata-hero-content {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}

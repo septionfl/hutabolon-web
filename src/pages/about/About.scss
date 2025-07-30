@@ -1,0 +1,338 @@
+// Color Variables
+$primary-dark: #5A756E;
+$primary-light: #8DBEC9;
+$accent-blue: #3DBCD5;
+$secondary-dark: #455E63;
+$white: #FFFFFF;
+$off-white: #F5F5F5;
+
+.about-village {
+  font-family: 'Poppins', sans-serif;
+  color: $secondary-dark;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  // Hero Section
+  .village-hero {
+    background: linear-gradient(rgba(90, 117, 110, 0.8)), 
+                url('https://source.unsplash.com/1600x900/?batak,village') center/cover;
+    padding: 6rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    color: $white;
+    text-align: center;
+    position: relative;
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      p {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  // Quick Facts
+  .quick-facts {
+    background: $white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+    .facts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .fact-card {
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background: $off-white;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        background: $primary-light;
+        color: $white;
+
+        .fact-icon, h3, p {
+          color: $white;
+        }
+      }
+
+      .fact-icon {
+        font-size: 2.5rem;
+        color: $accent-blue;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        color: $primary-dark;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: $secondary-dark;
+      }
+    }
+  }
+
+  // Main Content
+  .village-content {
+    .content-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .info-section {
+      margin-bottom: 4rem;
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid $primary-light;
+
+        .section-icon {
+          font-size: 1.8rem;
+          color: $accent-blue;
+          margin-right: 1rem;
+        }
+
+        h2 {
+          color: $primary-dark;
+          font-size: 1.8rem;
+        }
+      }
+
+      p {
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+      }
+
+      .historical-images {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+
+        img {
+          width: 100%;
+          border-radius: 8px;
+          box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+          transition: transform 0.3s;
+
+          &:hover {
+            transform: scale(1.02);
+          }
+        }
+      }
+
+      .culture-list {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+
+        li {
+          background: $off-white;
+          padding: 1rem;
+          border-radius: 8px;
+          position: relative;
+          padding-left: 2.5rem;
+
+          &::before {
+            content: '✓';
+            position: absolute;
+            left: 1rem;
+            color: $accent-blue;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .map-container {
+        margin: 2rem 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      }
+
+      .attractions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+
+        .attraction-card {
+          background: $white;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+          transition: transform 0.3s;
+
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+          }
+
+          .attraction-image {
+            height: 200px;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.5s;
+            }
+          }
+
+          &:hover .attraction-image img {
+            transform: scale(1.05);
+          }
+
+          h3 {
+            padding: 1rem 1rem 0.5rem;
+            color: $primary-dark;
+            font-size: 1.2rem;
+          }
+
+          .explore-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 0 1rem 1rem;
+            color: $accent-blue;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+
+            &:hover {
+              color: $primary-dark;
+            }
+
+            &::after {
+              content: '→';
+              margin-left: 0.5rem;
+              transition: margin 0.3s;
+            }
+
+            &:hover::after {
+              margin-left: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Village Leaders
+  .village-leaders {
+    background: $off-white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    text-align: center;
+
+    h2 {
+      color: $primary-dark;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .leaders-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .leader-card {
+      background: $white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 1rem;
+        border: 5px solid $primary-light;
+      }
+
+      h3 {
+        color: $primary-dark;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: $secondary-dark;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .about-village {
+    .village-hero {
+      padding: 4rem 1rem;
+      
+      h1 {
+        font-size: 2.2rem !important;
+      }
+      
+      p {
+        font-size: 1.2rem !important;
+      }
+    }
+
+    .quick-facts {
+      .facts-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .village-leaders {
+      .leaders-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-facts {
+    .facts-container {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
