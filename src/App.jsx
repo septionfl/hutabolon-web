@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/navbar/Navbar.jsx";
 import Home from "./pages/home/Home.jsx";
 import UMKM from "./pages/umkm/UMKM.jsx";
-import UMKMDetail from "./pages/UMKM/UMKMDetail.jsx";
+import UMKMDetail from "./pages/umkm/UMKMDetail.jsx";
 import AboutVillage from "./pages/about/About.jsx";
 import Login from "./pages/login/Login.jsx";
 import Register from "./pages/register/Register.jsx";
