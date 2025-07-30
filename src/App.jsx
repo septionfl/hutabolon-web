@@ -4,10 +4,10 @@ import Home from "./pages/home/Home.jsx";
 import UMKM from "./pages/umkm/UMKM.jsx";
 import UMKMDetail from "./pages/UMKM/UMKMDetail.jsx";
 import AboutVillage from "./pages/about/About.jsx";
-import Login from './pages/login/Login.jsx';
-import Register from './pages/register/Register.jsx';
-import Wisata from './pages/wisata/Wisata.jsx';
-import Report from './pages/report/Report.jsx';
+import Login from "./pages/login/Login.jsx";
+import Register from "./pages/register/Register.jsx";
+import Wisata from "./pages/wisata/Wisata.jsx";
+import Report from "./pages/report/Report.jsx";
 
 function App() {
   return (
