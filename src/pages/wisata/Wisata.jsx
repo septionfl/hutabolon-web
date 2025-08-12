@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./Home.scss";
+import "../home/Home.scss";
 import { FaMapMarkerAlt, FaHome, FaTree, FaFlag } from "react-icons/fa";
 import { GiVillage, GiWoodenChair, GiStonePath } from "react-icons/gi";
 import { FaLandmark } from "react-icons/fa";
