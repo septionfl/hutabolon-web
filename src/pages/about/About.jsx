@@ -15,9 +15,9 @@ const AboutVillage = () => {
   const villageInfo = {
     name: "Huta Bolon",
     location: "Pulau Samosir, Sumatera Utara",
-    population: 603,
+    population: "-",
     established: 1953,
-    area: "12.5 km²",
+    area: "-",
     history: `Huta Bolon Simanindo didirikan sekitar 300 tahun yang lalu oleh keturunan Raja Simalungun. Kompleks ini berfungsi sebagai pusat pemerintahan, tempat tinggal keluarga raja, sekaligus benteng pertahanan. Seluruh bangunan di dalamnya dibangun dengan filosofi dan arsitektur khas Batak Toba yang kaya akan makna.
 
 Pada tahun 1969, salah satu keturunan raja memutuskan untuk mengubah kompleks ini menjadi sebuah museum terbuka. Tujuannya adalah untuk melestarikan warisan budaya Batak yang berharga agar tidak lekang oleh waktu dan dapat dinikmati serta dipelajari oleh generasi sekarang dan mendatang.`
