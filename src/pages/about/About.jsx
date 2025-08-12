@@ -15,16 +15,12 @@ const AboutVillage = () => {
   const villageInfo = {
     name: "Huta Bolon",
     location: "Pulau Samosir, Sumatera Utara",
-    population: 1250,
-    established: 1850,
+    population: 603,
+    established: 1953,
     area: "12.5 km²",
-    history: `Huta Bolon adalah sebuah desa adat Batak Toba di jantung Pulau Samosir. Menurut legenda turun-temurun,
-    desa ini didirikan oleh Raja Sitanggang bersama beberapa tokoh adat lain sekitar pertengahan abad ke-19,
-    sebagai pusat musyawarah besar antar-marga di wilayah Samosir. Di sinilah dulunya lahir kesepakatan adat,
-    pembagian tanah ulayat, dan penetapan hukum adat Batak (adat Dalihan Na Tolu) yang menjadi rujukan untuk
-    desa-desa sekitar. Selain menjadi pusat politik adat, Huta Bolon juga dikenal sebagai tempat pertahanan strategis
-    rakyat Batak Toba ketika menghadapi agresi Belanda, dengan benteng alami berupa Danau Toba di sekitarnya
-    yang sulit ditembus.`
+    history: `Huta Bolon Simanindo didirikan sekitar 300 tahun yang lalu oleh keturunan Raja Simalungun. Kompleks ini berfungsi sebagai pusat pemerintahan, tempat tinggal keluarga raja, sekaligus benteng pertahanan. Seluruh bangunan di dalamnya dibangun dengan filosofi dan arsitektur khas Batak Toba yang kaya akan makna.
+
+Pada tahun 1969, salah satu keturunan raja memutuskan untuk mengubah kompleks ini menjadi sebuah museum terbuka. Tujuannya adalah untuk melestarikan warisan budaya Batak yang berharga agar tidak lekang oleh waktu dan dapat dinikmati serta dipelajari oleh generasi sekarang dan mendatang.`
   };
 
   const cultureInfo = `Masyarakat Huta Bolon sangat menjunjung tinggi adat Batak Toba, termasuk konsep Dalihan Na Tolu

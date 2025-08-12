@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./Home.scss";
 import { FaMapMarkerAlt, FaHome, FaTree, FaFlag } from "react-icons/fa";
 import { GiVillage, GiWoodenChair, GiStonePath } from "react-icons/gi";
-import { BiRestaurant } from "react-icons/bi";
+import { FaLandmark } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,11 +22,11 @@ const Home = () => {
     });
   }, []);
 
-  const dusunList = [
-    { name: "Dusun Sihotang", feature: "Pusat adat dan budaya", icon: <GiVillage /> },
-    { name: "Dusun Simanindo", feature: "Tarian tradisional & kerajinan", icon: <GiWoodenChair /> },
-    { name: "Dusun Ambarita", feature: "Peninggalan batu persidangan", icon: <GiStonePath /> },
-    { name: "Dusun Tomok", feature: "Pemakaman raja-raja", icon: <BiRestaurant /> }
+  const destinations = [
+    { name: "Huta Bolon", feature: "Rumah adat Bolon dan pusat budaya Batak", icon: <GiVillage /> },
+    { name: "Ambarita", feature: "Batu Persidangan Raja Siallagan", icon: <GiStonePath /> },
+    { name: "Tomok", feature: "Makam Raja Sidabutar & Museum Batak", icon: <FaLandmark /> },
+    { name: "Simanindo", feature: "Museum Huta Bolon Simanindo", icon: <GiWoodenChair /> }
   ];
 
   const scrollToAbout = () => {
@@ -46,16 +46,16 @@ const Home = () => {
       <section className="about" ref={aboutSectionRef}>
         <div className="about-container">
           <div className="about-text" data-aos="fade-right">
-            <h2>Desa Budaya Huta Bolon</h2>
+            <h2>Desa Huta Bolon</h2>
             <p>
-              Desa Huta Bolon merupakan permata budaya Batak Toba yang terletak di tepian Danau Toba. 
-              Dengan arsitektur tradisional dan tata desa yang terjaga sejak ratusan tahun, Huta Bolon 
-              menawarkan pengalaman autentik kehidupan masyarakat Batak.
+              Huta Bolon merupakan bagian dari wilayah adat Batak Toba yang berada di Kecamatan Simanindo, Kabupaten Samosir. 
+              Dengan peninggalan rumah adat Bolon dan pelestarian nilai-nilai leluhur, desa ini menjadi salah satu pusat budaya 
+              Batak yang masih terjaga hingga kini.
             </p>
             <ul className="highlights">
-              <li><span>✓</span> Rumah adat Bolon berusia lebih dari 200 tahun</li>
-              <li><span>✓</span> Lokasi strategis di pinggir Danau Toba</li>
-              <li><span>✓</span> Pusat pelestarian budaya Batak Toba</li>
+              <li><span>✓</span> Rumah adat Bolon dengan usia ratusan tahun</li>
+              <li><span>✓</span> Terletak strategis dekat Danau Toba dan situs budaya lainnya</li>
+              <li><span>✓</span> Pusat edukasi dan pelestarian budaya Batak Toba</li>
             </ul>
           </div>
           <div className="about-media" data-aos="fade-left" data-aos-delay="200">
@@ -74,20 +74,20 @@ const Home = () => {
 
       <section className="dusun-section">
         <div className="section-header" data-aos="fade-up">
-          <h2>Dusun-Dusun Kami</h2>
-          <p>Setiap dusun memiliki keunikan dan cerita tersendiri</p>
+          <h2>Destinasi Budaya Sekitar</h2>
+          <p>Wilayah-wilayah budaya yang bisa dikunjungi di sekitar Desa Huta Bolon</p>
         </div>
         <div className="dusun-grid">
-          {dusunList.map((dusun, index) => (
+          {destinations.map((place, index) => (
             <div 
               className="dusun-card" 
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <div className="dusun-icon">{dusun.icon}</div>
-              <h3>{dusun.name}</h3>
-              <p>{dusun.feature}</p>
+              <div className="dusun-icon">{place.icon}</div>
+              <h3>{place.name}</h3>
+              <p>{place.feature}</p>
             </div>
           ))}
         </div>
@@ -116,7 +116,7 @@ const Home = () => {
         </Link>
       </section>
 
-      {/* 🗺️ SECTION PETA SAMPAH */}
+      {/* 🗺 SECTION PETA SAMPAH */}
       <section className="waste-maps" data-aos="fade-up">
         <div className="section-header">
           <h2>Peta Persebaran Sampah</h2>
