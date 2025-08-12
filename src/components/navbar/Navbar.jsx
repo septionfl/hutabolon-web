@@ -33,9 +33,6 @@ const Navbar = () => {
                         <Link to="/tentang">Tentang Kami</Link>
                     </li>
                     <li onClick={() => setShowNav(false)}>
-                        <Link to="/berita">Berita Desa</Link>
-                    </li>
-                    <li onClick={() => setShowNav(false)}>
                         <Link to="/report">Report</Link>
                     </li>
                 </ul>
